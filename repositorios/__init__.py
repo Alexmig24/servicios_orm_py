@@ -1,0 +1,2 @@
+from repositorios.repositorio_autor import RepositorioAutor
+from repositorios.repositorio_paper import RepositorioPaper

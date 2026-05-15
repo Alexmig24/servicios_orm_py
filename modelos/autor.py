@@ -6,6 +6,7 @@ class Autor(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(50), nullable=False)
     pais = db.Column(db.String(50))
+    paper = db.relationship("Paper", back_populates="autor")
 
     def get_diccionario(self):
         return {
